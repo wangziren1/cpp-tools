@@ -12,5 +12,5 @@ TEST(TimerTest, BasicAssertions) {
   auto t1 = Now();
   f();
   auto t2 = Now();
-  std::cout << Duration(t2, t1).count() << std::endl;
+  std::cout << Duration(t2, t1) << std::endl;
 }

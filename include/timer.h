@@ -3,9 +3,9 @@
 
 #include <chrono>
 
-std::chrono::system_clock::time_point Now();
+std::chrono::steady_clock::time_point Now();
 
-std::chrono::duration<double> Duration(std::chrono::system_clock::time_point t2,
-                                       std::chrono::system_clock::time_point t1);
+double Duration(std::chrono::steady_clock::time_point t2,
+                std::chrono::steady_clock::time_point t1);
 
 #endif  // CPP_TOOLS_TIME_H_
