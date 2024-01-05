@@ -5,6 +5,7 @@
 
 std::chrono::steady_clock::time_point Now();
 
+// how many milliseconds are there between t1 and t2
 double Duration(std::chrono::steady_clock::time_point t2,
                 std::chrono::steady_clock::time_point t1);
 
