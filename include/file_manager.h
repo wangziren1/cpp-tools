@@ -1,5 +1,5 @@
-#ifndef CPP_TOOLS_FILE_NAME_H_
-#define CPP_TOOLS_FILE_NAME_H_
+#ifndef CPP_TOOLS_FILE_MANAGER_H_
+#define CPP_TOOLS_FILE_MANAGER_H_
 
 #include <string>
 #include <vector>
@@ -14,4 +14,4 @@ int MkDir(const std::string& path);
 
 std::vector<std::string> GetFilePaths(const std::string& dir);
 
-#endif  // CPP_TOOLS_FILE_NAME_H_
+#endif  // CPP_TOOLS_FILE_MANAGER_H_

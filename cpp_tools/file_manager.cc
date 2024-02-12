@@ -1,4 +1,4 @@
-#include "file_name.h"
+#include "file_manager.h"
 
 #include <dirent.h>
 #include <string.h>
@@ -33,6 +33,7 @@ int MkDir(const std::string& path) {
   return ret;
 }
 
+// Get the path of all the imgs in dir
 std::vector<std::string> GetFilePaths(const std::string& dir) {
   std::vector<std::string> paths;
   DIR *pDir;

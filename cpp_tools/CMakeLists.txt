@@ -1,6 +1,6 @@
 find_package(OpenCV REQUIRED)
 
-set(src timer.cc file_name.cc object_detect.cc)
+set(src timer.cc file_manager.cc object_detect.cc)
 
 add_library(cpp_tools ${src})
 add_library(cpp_tools::cpp_tools ALIAS cpp_tools)
@@ -22,5 +22,5 @@ function(cpp_tools_test test_file)
 endfunction(cpp_tools_test)
 
 cpp_tools_test(timer_test.cc)
-cpp_tools_test(file_name_test.cc)
+cpp_tools_test(file_manager_test.cc)
 cpp_tools_test(object_detect_test.cc)
